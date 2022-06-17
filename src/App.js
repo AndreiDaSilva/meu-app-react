@@ -3,7 +3,9 @@ import Navbar from './componets/Navbar';
 import Home from './pages/Home';
 import Empresa from './pages/Empresa'
 import Contato from './pages/Contato'
-import Header from './componets/Header';
+import Header from './componets/layout/Header';
+import Login from './pages/Login';
+import Cadastro from './pages/Cadastro';
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
         </Route>
         <Route path="/contato">
           <Contato />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/cadastro">
+          <Cadastro />
         </Route>
       </Switch>
     </Router>
