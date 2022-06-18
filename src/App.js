@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
-import Navbar from './componets/Navbar';
 import Home from './pages/Home';
 import Empresa from './pages/Empresa'
 import Contato from './pages/Contato'
 import Header from './componets/layout/Header';
 import Login from './pages/Login';
 import Cadastro from './pages/Cadastro';
+import Footer from './componets/layout/Footer';
 
 function App() {
   return (
@@ -28,6 +28,7 @@ function App() {
           <Cadastro />
         </Route>
       </Switch>
+      <Footer />
     </Router>
   );
 }
